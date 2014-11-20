@@ -4,6 +4,13 @@ import jiawei.kuang.common.exception.InvalidIntegerException;
 
 public class NumUtil {
     
+    /**
+     * 
+     * @param num input integer number
+     * @return String ordinal number
+     * @throws InvalidIntegerException if the input number is less than or equals to 0
+     * @since Nov. 17, 2014
+     */
     public String convertNumToOrdinal(int num) {
         if (num <= 0) {
             throw new InvalidIntegerException("Input number is not positive, so cannot parse to ordinal.");
